@@ -23,7 +23,14 @@ function Home({ navItems, subNavItems }) {
       </Head>
       <div>
         <NavBar navItems={navItems} subNavItems={subNavItems} />
-        home page!
+        <h1>Welcome Garden Noob!</h1>
+        <img src="/gardenNoob.png" alt="main image" />
+        <h1>Get Growin'!</h1>
+        <p>
+          So you've moved/moving from your city apartment and looking forward to
+          getting some dirt under your nails. Here you'll find a few tips to get
+          you started...before you've started :D
+        </p>
       </div>
     </Layout>
   );
