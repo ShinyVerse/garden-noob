@@ -24,3 +24,64 @@
 .subParagraph {
   padding: 0px 80px;
 }
+
+@media (min-width: 728px) {
+  .subParagraph {
+    padding: 0px 10px;
+  }
+  .outerContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 10%;
+  }
+  .container {
+    width: 30%;
+  }
+  .subImg {
+    margin: 0px;
+    border: black solid 4px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .featureImg {
+    width: 350px;
+    height: 350px;
+  }
+
+  .subParagraph {
+    padding: 0px 10px;
+    font-size: 1.3em;
+  }
+  .outerContainer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 10%;
+  }
+  .container {
+    width: 30%;
+  }
+  .subImg {
+    width: 150px;
+    height: 150px;
+    border: black solid 6px;
+  }
+}
+@media (min-width: 1400px) {
+  .featureImg {
+    width: 500px;
+    height: 500px;
+  }
+
+  .subParagraph {
+    margin-top: 20px;
+    padding: 0px 10px;
+    font-size: 1.5em;
+  }
+  .outerContainer {
+    margin-bottom: 100px;
+  }
+}

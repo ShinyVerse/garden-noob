@@ -1,20 +1,6 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
-
-// import { getNavItems, getSubNavItems } from "../lib/plants";
 import styles from "../styles/index.module.css";
-
-// export function getStaticProps() {
-//   const navItems = getNavItems();
-//   const subNavItems = getSubNavItems();
-
-//   return {
-//     props: {
-//       navItems,
-//       subNavItems,
-//     },
-//   };
-// }
 
 function Home() {
   return (
@@ -22,7 +8,7 @@ function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <div className={styles.main}>
+      <div>
         <h1 className="fonttype1">Welcome Garden Noob!</h1>
         <img
           className={styles.homeImg}

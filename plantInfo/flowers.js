@@ -15,6 +15,5 @@ export default [
           "they close up at night, so placing them in a partially shady area means you might not see them all that much.",
       },
     ],
-    issues: [],
   },
 ];

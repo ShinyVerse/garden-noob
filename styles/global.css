@@ -12,20 +12,45 @@ body {
 }
 
 a {
-  color: #0070f3;
+  color: rgb(41, 69, 37);
   text-decoration: none;
 }
 
-.fonttype1 {
+.fonttype1,
+.fonttype1-sub {
   font-family: "Russo One", sans-serif;
   padding: 0px 10px;
   text-align: center;
   z-index: 100;
   position: relative;
+  width: 100%;
 }
-
 .paragraphText {
   font-family: "Acme", sans-serif;
   padding: 0px 10px;
   text-align: center;
+}
+
+main {
+  width: 100%;
+  margin-top: 70px;
+}
+
+@media (min-width: 728px) {
+  main {
+    margin-top: 20px;
+    margin-left: 15%;
+    width: 90%;
+  }
+  .fonttype1-sub {
+    margin-left: -5%;
+    font-size: 2.3em;
+  }
+  .fonttype1 {
+    font-size: 4em;
+  }
+  .paragraphText {
+    margin: 0px 10%;
+    font-size: 1.8em;
+  }
 }

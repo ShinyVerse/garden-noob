@@ -37,29 +37,38 @@ export default function PlantItem({ plantData }) {
       />
       {plantData.tips && (
         <div>
-          <h2 className="fonttype1">Quick tips</h2>
-          {plantData.tips.map((tip) => (
-            <div className={styles.container} key={tip.id}>
-              {tip.image && (
-                <img className={styles.subImg} src={`/${tip.id}.jpg`} />
-              )}
-              <p className={`paragraphText ${styles.subParagraph}`}>
-                {tip.content}
-              </p>
+          {plantData.tips && (
+            <div className={styles.outerContainer}>
+              <h2 className="fonttype1-sub">Quick tips</h2>
+              {plantData.tips.map((tip) => (
+                <div className={styles.container} key={tip.id}>
+                  {tip.image && (
+                    <img className={styles.subImg} src={`/${tip.id}.jpg`} />
+                  )}
+                  <p className={`paragraphText ${styles.subParagraph}`}>
+                    {tip.content}
+                  </p>
+                </div>
+              ))}
             </div>
-          ))}
-          {plantData.issues && <h2 className="fonttype1">Potential issues</h2>}
-          {plantData.issues &&
-            plantData.issues.map((issue) => (
-              <div className={styles.container} key={issue.id}>
-                {issue.image && (
-                  <img className={styles.subImg} src={`/${issue.id}.jpg`} />
-                )}
-                <p className={`paragraphText ${styles.subParagraph}`}>
-                  {issue.content}
-                </p>
-              </div>
-            ))}
+          )}
+
+          {plantData.issues && (
+            <div className={styles.outerContainer}>
+              <h2 className="fonttype1-sub">Potential issues</h2>
+              {plantData.issues &&
+                plantData.issues.map((issue) => (
+                  <div className={styles.container} key={issue.id}>
+                    {issue.image && (
+                      <img className={styles.subImg} src={`/${issue.id}.jpg`} />
+                    )}
+                    <p className={`paragraphText ${styles.subParagraph}`}>
+                      {issue.content}
+                    </p>
+                  </div>
+                ))}
+            </div>
+          )}
         </div>
       )}
     </Layout>

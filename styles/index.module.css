@@ -4,15 +4,17 @@
   padding: 0px;
   z-index: -10;
 }
-
-.main {
-  width: 100%;
-  margin-top: 70px;
-}
-
 @media (min-width: 728px) {
-  .main {
-    margin-top: 20px;
-    margin-left: 80px;
+  .homeImg {
+    width: 60%;
+    margin: -80px 20% -70px;
+    z-index: -10;
+  }
+}
+@media (min-width: 1024px) {
+  .homeImg {
+    width: 40%;
+    margin: -140px 30%;
+    z-index: -10;
   }
 }
