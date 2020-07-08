@@ -17,7 +17,7 @@ export default [
       {
         id: "climbers",
         image: true,
-        content: "natural climbers, so have something for them to grab on to!'",
+        content: "natural climbers, so have something for them to grab on to!",
       },
     ],
     issues: [
@@ -71,7 +71,7 @@ export default [
       {
         id: "climbers",
         image: true,
-        content: "natural climbers, so have something for them to grab on to!'",
+        content: "natural climbers, so have something for them to grab on to!",
       },
     ],
   },

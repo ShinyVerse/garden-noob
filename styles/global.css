@@ -1,0 +1,31 @@
+html,
+body {
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.fonttype1 {
+  font-family: "Russo One", sans-serif;
+  padding: 0px 10px;
+  text-align: center;
+  z-index: 100;
+  position: relative;
+}
+
+.paragraphText {
+  font-family: "Acme", sans-serif;
+  padding: 0px 10px;
+  text-align: center;
+}

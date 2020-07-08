@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Layout from "../../components/layout";
 import { getAllPaths, getPlantData } from "../../lib/plants";
+import styles from "./[id].module.css";
 
 export async function getStaticPaths() {
   const paths = getAllPaths();
@@ -28,45 +29,35 @@ export default function PlantItem({ plantData }) {
       <Head>
         <title>{plantData.id}</title>
       </Head>
-      <p>{plantData.name}</p>
+      <h1 className="fonttype1">{plantData.name}</h1>
       <img
-        style={{ width: "500px", height: "500px", borderRadius: "10px" }}
+        className={styles.featureImg}
         src={`/${plantData.id}.jpg`}
         alt={plantData.name}
       />
       {plantData.tips && (
         <div>
-          <h1>Quick tips</h1>
+          <h2 className="fonttype1">Quick tips</h2>
           {plantData.tips.map((tip) => (
-            <div>
+            <div className={styles.container} key={tip.id}>
               {tip.image && (
-                <img
-                  style={{
-                    width: "200px",
-                    height: "200px",
-                    borderRadius: "10px",
-                  }}
-                  src={`/${tip.id}.jpg`}
-                />
+                <img className={styles.subImg} src={`/${tip.id}.jpg`} />
               )}
-              <p>{tip.content}</p>
+              <p className={`paragraphText ${styles.subParagraph}`}>
+                {tip.content}
+              </p>
             </div>
           ))}
-          {plantData.issues && <h1>Potential issues</h1>}
+          {plantData.issues && <h2 className="fonttype1">Potential issues</h2>}
           {plantData.issues &&
             plantData.issues.map((issue) => (
-              <div>
+              <div className={styles.container} key={issue.id}>
                 {issue.image && (
-                  <img
-                    style={{
-                      width: "200px",
-                      height: "200px",
-                      borderRadius: "10px",
-                    }}
-                    src={`/${issue.id}.jpg`}
-                  />
+                  <img className={styles.subImg} src={`/${issue.id}.jpg`} />
                 )}
-                <p>{issue.content}</p>
+                <p className={`paragraphText ${styles.subParagraph}`}>
+                  {issue.content}
+                </p>
               </div>
             ))}
         </div>

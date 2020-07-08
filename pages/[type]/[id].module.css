@@ -1,0 +1,26 @@
+.container {
+  width: 100%;
+}
+
+.featureImg {
+  display: block;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  margin: auto;
+}
+.subImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin: auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subParagraph {
+  padding: 0px 80px;
+}
