@@ -7,6 +7,14 @@ export default function NavBar({ navItems, subNavItems }) {
   console.log("subnav", subNavItems);
   return (
     <ul className={styles.navbar}>
+      <div className="logo-container">
+        {" "}
+        <Link href="/">
+          <a>
+            <img className="logo" src="/gardenNoob.png" />
+          </a>
+        </Link>
+      </div>
       {navItems.map((topItem, index) => {
         return (
           <li className={styles.category} key={topItem}>
