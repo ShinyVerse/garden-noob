@@ -16,6 +16,13 @@
   margin: auto;
   border: black solid 6px;
 }
+.issue {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin: auto;
+  border: rgb(135, 28, 28) solid 6px;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -39,9 +46,9 @@
   .container {
     width: 30%;
   }
-  .subImg {
+  .subImg,
+  .issue {
     margin: 0px;
-    border: black solid 4px;
   }
 }
 
@@ -65,7 +72,8 @@
   .container {
     width: 30%;
   }
-  .subImg {
+  .subImg,
+  .issue {
     width: 150px;
     height: 150px;
   }

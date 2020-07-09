@@ -5,7 +5,6 @@ import styles from "./[id].module.css";
 
 export async function getStaticPaths() {
   const paths = getAllPaths();
-  console.log(paths);
   return {
     paths,
     fallback: false,
@@ -22,8 +21,6 @@ export async function getStaticProps({ params }) {
   };
 }
 export default function PlantItem({ plantData }) {
-  console.log("data", plantData.tips);
-
   return (
     <Layout>
       <Head>
@@ -60,7 +57,7 @@ export default function PlantItem({ plantData }) {
                 plantData.issues.map((issue) => (
                   <div className={styles.container} key={issue.id}>
                     {issue.image && (
-                      <img className={styles.subImg} src={`/${issue.id}.jpg`} />
+                      <img className={styles.issue} src={`/${issue.id}.jpg`} />
                     )}
                     <p className={`paragraphText ${styles.subParagraph}`}>
                       {issue.content}

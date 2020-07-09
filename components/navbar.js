@@ -3,12 +3,9 @@ import Link from "next/link";
 import styles from "./navbar.module.css";
 
 export default function NavBar({ navItems, subNavItems }) {
-  console.log("nav", navItems);
-  console.log("subnav", subNavItems);
   return (
     <ul className={styles.navbar}>
       <div className="logo-container">
-        {" "}
         <Link href="/">
           <a>
             <img className="logo" src="/gardenNoob.png" />
