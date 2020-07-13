@@ -21,9 +21,11 @@ Clone the repo and run:
 
 `npm install`
 
-and you should be good to go!
+and you should be good to go with:
+
+`npm run dev`
 
 ## Built With
 
-[Nextjs](https://nextjs.org/learn/basics/create-nextjs-app) - A React framework that allows us to create views from the server side.
-[React](https://reactjs.org/) - You probably know of React by now :)
+- [Nextjs](https://nextjs.org/learn/basics/create-nextjs-app) - A React framework that allows us to create views from the server side.
+- [React](https://reactjs.org/) - You probably know of React by now :)
